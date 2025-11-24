@@ -2,96 +2,84 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Ruiyang Si
+    - name: Email
+      value: limpid@bupt.edu.cn
+    - name: Phone
+      value: +86 18511778628
     - name: Languages
-      value: English, German
+      value: Chinese, English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: B.S. in Computer Science and Technology
+      institution: Beijing University of Posts and Telecommunications (BUPT), Beijing, China
+      year: 2023 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - "GPA: 3.89/4.0 (Rank: 1/360)"
+        - Major in Computer Science and Technology
+        - Focus on GenAI, Unified Models, and Large Language Model Reasoning
+    - title: High School
+      institution: Capital Normal University High School, Beijing, China
+      year: 2020 - 2023
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Intern
+      institution: THU-C3I, Tsinghua University, Beijing
+      year: 2025.10 - present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Supervised by Prof. Ning Ding and Dr. Youbang Sun
+        - Investigating the boundaries of LLM reasoning in combinatorial optimization
+        - Aiming to enable LLMs to tackle NP-hard problems while ensuring robust generalization across diverse domains
+
+    - title: Research Intern
+      institution: GeWu-Lab, Renmin University of China, Beijing
+      year: 2025.2 - 2025.9
       description:
-        - Description 1.
-        - Description 2.
+        - Supervised by Prof. Di Hu
+        - Proposed and submitted a novel audio-visual editing approach to ICLR 2026
+        - Built on extensive research of diffusion-based generation and editing techniques
+        - Contributed to tasks in audio-visual co-generation and complex audio editing based on Multimodal Large Language Models (MLLMs)
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Member of BUPT Competitive Programming Training Team
+      institution: Beijing University of Posts and Telecommunications, Beijing
+      year: 2023.9 - 2024.12
       description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+        - Supervised by Prof. Ya Yang
+        - Acted as team leader, responsible for team coordination, training schedule planning, and overall strategic preparation
+        - Prepared problems for CCPC contests and BUPTCPC, focusing on data structures and mathematics
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2025
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - CCF Elite Collegiate Award (Top 99 nationwide)
+        - National Scholarship (Highest honor for undergraduates in China)
+    - year: 2024
       items:
-        - Max Planck Medal
+        - National Scholarship (Highest honor for undergraduates in China)
+        - Gold Medal, The 2024 ICPC Asia Chengdu Regional Contest
+        - Gold Medal, The 10th China Collegiate Programming Contest (CCPC) Harbin
+        - Gold Medal, The 2024 Collegiate Computer Systems & Programming Contest (CCF-CCSP)
+    - year: 2021
+      items:
+        - Silver Medal, The 38th National Olympiad in Informatics (NOI 2021)
 
-- title: Academic Interests
+- title: Technical Skills
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Programming Languages
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - C/C++ (500/500 points in CCF Certified Software Professional)
+        - Python
+    - title: Research Interests
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - GenAI
+        - Unified Models
+        - Large Language Model (LLM) Reasoning
+        - Audio-Visual Generation and Editing
+        - Multimodal Large Language Models (MLLMs)

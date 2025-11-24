@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2024-10-20 10:00:00-0800
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Won three gold medals in competitive programming contests: ICPC Asia Chengdu, CCPC Harbin, and CCF-CCSP 2024! 🏆
