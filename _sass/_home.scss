@@ -96,8 +96,9 @@ html[data-theme="dark"] {
 }
 
 .home-affiliation {
-  color: var(--home-muted);
-  font-size: 0.95rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--home-accent);
   margin-bottom: 0;
 }
 
@@ -565,4 +566,67 @@ footer {
 .navbar .nav-link {
   font-size: 0.95rem;
   font-weight: 500;
+}
+
+// WeChat QR popup
+.wechat-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+.wechat-dialog {
+  position: relative;
+  width: 90%;
+  max-width: 340px;
+  margin: 12vh auto 0;
+  padding: 1.75rem 1.5rem 1.25rem;
+  background: var(--global-bg-color);
+  border: 1px solid var(--home-border);
+  border-radius: 1rem;
+  box-shadow: 0 20px 40px -12px rgba(15, 23, 42, 0.35);
+  text-align: center;
+
+  h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--home-primary);
+    margin-bottom: 1rem;
+
+    i {
+      color: #07c160; // WeChat green
+    }
+  }
+
+  img {
+    width: 100%;
+    max-width: 240px;
+    border-radius: 0.6rem;
+    border: 1px solid var(--home-border);
+  }
+
+  p {
+    margin: 0.9rem 0 0;
+    font-size: 0.9rem;
+    color: var(--home-muted);
+  }
+}
+
+.wechat-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  border: 0;
+  background: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--home-muted);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--home-primary);
+  }
 }
