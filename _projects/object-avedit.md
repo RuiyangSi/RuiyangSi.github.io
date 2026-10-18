@@ -31,9 +31,9 @@ Object-AVEdit presents a novel approach for audio-visual editing at the object l
 
 ### Authors
 
-Youquan Fu*, **Ruiyang Si***, Hongfa Wang, Dongzhan Zhou, Jiacheng Sun, Ping Luo, Di Hu, Hongyuan Zhang, Xuelong Li
+Youquan Fu\*, **Ruiyang Si\***, Hongfa Wang, Dongzhan Zhou, Jiacheng Sun, Ping Luo, Di Hu, Hongyuan Zhang, Xuelong Li
 
-<small>* Equal contribution</small>
+<small>\* Equal contribution</small>
 
 ### Supervision
 
@@ -42,4 +42,3 @@ This work was conducted under the supervision of **Prof. Di Hu** at the GeWu Lab
 ---
 
 This research represents my contribution to advancing multimodal AI systems, combining my interests in GenAI and unified models with practical applications in audio-visual editing.
-

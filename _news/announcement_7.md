@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 Joined BUPT Competitive Programming Training Team under Prof. Ya Yang. Excited to contribute as team leader!
-

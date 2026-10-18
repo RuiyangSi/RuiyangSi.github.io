@@ -409,7 +409,11 @@ html[data-theme="dark"] .home-notice {
 }
 
 .home-viewall {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
   font-size: 0.9rem;
 }
 
@@ -451,7 +455,6 @@ html[data-theme="dark"] .home-notice {
   font-size: 0.9rem;
   color: var(--home-muted);
 }
-
 
 // Theme toggle: show only two states — a moon in light mode, a sun in dark mode
 #light-toggle-system,

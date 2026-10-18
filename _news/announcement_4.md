@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 Started research internship at GeWu-Lab (Renmin University of China) under Prof. Di Hu, working on audio-visual editing and multimodal generation.
-

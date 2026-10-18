@@ -11,7 +11,7 @@ services:
       - 35729:35729
     volumes:
       - .:/srv/jekyll
-      - jekyll_bundle:/usr/local/bundle   # 这里引用命名卷
+      - jekyll_bundle:/usr/local/bundle # 这里引用命名卷
     environment:
       - JEKYLL_ENV=development
     command: >
@@ -27,4 +27,4 @@ services:
       bundle exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling"
 
 volumes:
-  jekyll_bundle:                           # 这里定义命名卷（和 services 同级）
+  jekyll_bundle: # 这里定义命名卷（和 services 同级）

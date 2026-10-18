@@ -24,8 +24,12 @@
     </p>
     <p class="home-pub-meta">
       <strong>{{ pub.venue }}</strong>
-      {%- for l in pub.links %} | <a href="{{ l.url }}" target="_blank" rel="noopener noreferrer">{{ l.name }}</a>{% endfor %}
+      {%- for l in pub.links %}
+        | <a href="{{ l.url }}" target="_blank" rel="noopener noreferrer">{{ l.name }}</a>
+      {%- endfor %}
     </p>
-    {% if pub.summary %}<p class="home-pub-summary">{{ pub.summary }}</p>{% endif %}
+    {% if pub.summary %}
+      <p class="home-pub-summary">{{ pub.summary }}</p>
+    {% endif %}
   </div>
 </div>

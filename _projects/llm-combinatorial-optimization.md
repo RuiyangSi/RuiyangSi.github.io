@@ -36,4 +36,3 @@ Supervised by **Prof. Ning Ding** and **Dr. Youbang Sun** at THU-C3I, Tsinghua U
 ---
 
 This research represents the intersection of my interests in **LLM Reasoning**, **structured problem-solving**, and **building general intelligent systems** with verifiable reasoning capabilities.
-

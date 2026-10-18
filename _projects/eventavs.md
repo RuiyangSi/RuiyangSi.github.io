@@ -38,4 +38,3 @@ Supervised by **Prof. Di Hu** at the GeWu Lab, Renmin University of China (Febru
 ---
 
 This project aligns with my research interests in unified models and multimodal AI systems.
-
