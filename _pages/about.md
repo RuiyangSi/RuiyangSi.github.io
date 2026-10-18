@@ -6,7 +6,7 @@ permalink: /
 
 ## About
 
-I am a senior undergraduate in Computer Science and Technology at Beijing University of Posts and Telecommunications (BUPT), and an incoming Master's student at Peking University, advised by [Prof. Daquan Zhou](https://zhoudaquan.github.io/homepage.io/index.html). I am currently a member of [DAGroup](https://github.com/DAGroup-PKU).
+I am an incoming Master's student at Peking University, advised by [Prof. Daquan Zhou](https://zhoudaquan.github.io/homepage.io/index.html). I am currently a member of [DAGroup](https://github.com/DAGroup-PKU).
 
 My journey in computer science began with competitive programming, which gave me a strong algorithmic foundation that has naturally carried over into my research. My current research focuses on **agents** and **robotics**.
 
