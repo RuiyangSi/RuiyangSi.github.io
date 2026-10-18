@@ -1,0 +1,82 @@
+# Shared by the homepage (selected: true) and /publications/ (all entries).
+# Authors: "me: true" bolds the name; "url" links it; "mark" appends * (equal contribution) or † (corresponding).
+
+- title: "Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success but 65% Fewer Tokens"
+  short: PyRUA-Lean
+  year: 2026
+  venue: Technical Report
+  selected: true
+  image: publication_preview/pyrua-lean.svg
+  summary: >-
+    An efficient code-execution framework for robot-use agents: the agent chains robot primitives in Python cells,
+    raising success from 63.1% to 71.7% with 65% fewer input tokens. Achieves <strong>state-of-the-art on RoboDojo</strong>
+    (51.6% success, 19.4 points above the previous best on the public leaderboard), and our GRPO-trained 4B Coder
+    generalizes to unseen tasks (18.8% → 44.1%), outperforming Qwen3.5-27B.
+  authors:
+    - name: Ruiyang Si
+      me: true
+    - name: Jianxin Bi
+    - name: Shunyu Yang
+    - name: Rui Ni
+    - name: Wenbo Huang
+    - name: Qiang Wang
+    - name: Shulong Jiang
+    - name: Yintianrun Zhang
+    - name: Feixiang Ruan
+      url: https://vme0522.github.io/
+    - name: Kewei Zhang
+      url: https://xiwen1.github.io/
+    - name: Duomin Wang
+      url: https://dorniwang.github.io/
+    - name: Xiuyu Li
+      url: https://xiuyuli.com/
+    - name: Haiwen Feng
+      url: https://havenfeng.github.io/
+    - name: Zhen Dong
+      url: https://dong-zhen.com/
+    - name: Daquan Zhou
+      url: https://zhoudaquan.github.io/homepage.io/index.html
+      mark: "†"
+  links:
+    - name: arXiv
+      url: https://arxiv.org/abs/2610.01939
+    - name: Project
+      url: https://dagroup-pku.github.io/PyRUA-Lean/
+    - name: Code
+      url: https://github.com/DAGroup-PKU/PyRUA-Lean
+    - name: Model
+      url: https://huggingface.co/DAGroup-PKU/PyRUA-Lean-Coder-v0.1-4B
+
+- title: "Object-AVEdit: An Object-level Audio-Visual Editing Model"
+  short: Object-AVEdit
+  year: 2025
+  venue: Preprint
+  selected: false
+  image: publication_preview/avedit.png
+  summary: >-
+    We train an audio generation model whose text tokens are explicitly aligned with sounding objects, and build on it
+    the first model for object-level audio-visual editing, supporting object addition, replacement and removal
+    across both audio and video.
+  authors:
+    - name: Youquan Fu
+      mark: "*"
+    - name: Ruiyang Si
+      me: true
+      mark: "*"
+    - name: Hongfa Wang
+    - name: Dongzhan Zhou
+    - name: Jiacheng Sun
+    - name: Ping Luo
+      url: http://luoping.me/
+    - name: Di Hu
+      url: https://dtaoo.github.io/
+      mark: "†"
+    - name: Hongyuan Zhang
+      url: https://hyzhang98.github.io/
+      mark: "†"
+    - name: Xuelong Li
+      url: http://xuelongli.cn/en.php
+      mark: "†"
+  links:
+    - name: arXiv
+      url: https://arxiv.org/abs/2510.00050

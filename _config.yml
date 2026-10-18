@@ -7,16 +7,14 @@ first_name: Ruiyang
 middle_name: 
 last_name: Si
 contact_note: >
-  Feel free to reach out via email (limpid@bupt.edu.cn) or phone (+86 18511778628) for research collaborations or academic discussions.
+  Feel free to reach out via email (ruiyangsi0329@gmail.com) for research collaborations or academic discussions.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal academic website of Ruiyang Si, undergraduate student at BUPT researching GenAI, Unified Models, and LLM Reasoning.
+  Personal academic website of Ruiyang Si, senior undergraduate at BUPT and incoming Master's student at Peking University, working on self-improving agents and robotics.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: Ruiyang Si, BUPT, GenAI, LLM Reasoning, Unified Models, Audio-Visual Editing, Competitive Programming, Machine Learning # add your own keywords or leave empty
+  Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
+keywords: Ruiyang Si, BUPT, Peking University, Self-Improving Agents, Robotics, Competitive Programming
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://RuiyangSi.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -54,7 +52,7 @@ posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 1100px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -389,7 +387,7 @@ enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
-enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
+enable_progressbar: false # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
 
 # -----------------------------------------------------------------------------

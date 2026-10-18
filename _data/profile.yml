@@ -1,0 +1,23 @@
+# Sidebar profile shared by every page using layout: home
+avatar: avatar.jpg
+role: Senior Undergraduate
+affiliation: Beijing University of Posts and Telecommunications
+
+interests:
+  - Agents
+  - Robotics
+
+socials:
+  - name: Email
+    icon: fa-solid fa-envelope
+    url: mailto:ruiyangsi0329@gmail.com
+  - name: Google Scholar
+    icon: ai ai-google-scholar
+    url: https://scholar.google.com/citations?user=zrpw-ysAAAAJ
+  - name: GitHub
+    icon: fa-brands fa-github
+    url: https://github.com/RuiyangSi
+  - name: WeChat
+    icon: fa-brands fa-weixin
+    url: "#"
+    id: wechat-link

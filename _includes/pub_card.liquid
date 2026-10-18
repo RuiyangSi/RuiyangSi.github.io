@@ -1,0 +1,31 @@
+{% assign pub = include.pub %}
+<div class="home-pub">
+  {% if pub.image %}
+    <div class="home-pub-thumb">
+      <img src="{{ pub.image | prepend: '/assets/img/' | relative_url }}" alt="{{ pub.short }}" loading="lazy">
+    </div>
+  {% endif %}
+  <div class="home-pub-body">
+    <h3>
+      <a href="{{ pub.links[0].url }}" target="_blank" rel="noopener noreferrer">{{ pub.title }}</a>
+    </h3>
+    <p class="home-pub-authors">
+      {%- for a in pub.authors -%}
+        {%- if a.me -%}
+          <strong>{{ a.name }}</strong>
+        {%- elsif a.url -%}
+          <a href="{{ a.url }}" target="_blank" rel="noopener noreferrer">{{ a.name }}</a>
+        {%- else -%}
+          {{ a.name }}
+        {%- endif -%}
+        {{- a.mark -}}
+        {%- unless forloop.last -%}, {% endunless -%}
+      {%- endfor -%}
+    </p>
+    <p class="home-pub-meta">
+      <strong>{{ pub.venue }}</strong>
+      {%- for l in pub.links %} | <a href="{{ l.url }}" target="_blank" rel="noopener noreferrer">{{ l.name }}</a>{% endfor %}
+    </p>
+    {% if pub.summary %}<p class="home-pub-summary">{{ pub.summary }}</p>{% endif %}
+  </div>
+</div>
