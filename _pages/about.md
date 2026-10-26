@@ -8,6 +8,8 @@ permalink: /
 
 I am an incoming Master's student at Peking University, advised by [Prof. Daquan Zhou](https://zhoudaquan.github.io/homepage.io/index.html). I am currently a member of [DAGroup](https://github.com/DAGroup-PKU).
 
+Previously, I worked on LLM post-training with [Prof. Ning Ding](https://c3i.ee.tsinghua.edu.cn/people/ning_ding/) at Tsinghua University, audio-visual generation and editing with [Prof. Di Hu](https://dtaoo.github.io/) at Renmin University of China, and the economics of generative models with [Prof. Tonghan Wang](https://tonghanwang.github.io/) at Tsinghua University.
+
 My journey in computer science began with competitive programming, which gave me a strong algorithmic foundation that has naturally carried over into my research. My current research focuses on **agents** and **robotics**.
 
 <div class="home-notice">
