@@ -1,6 +1,29 @@
 # Shared by the homepage (selected: true) and /publications/ (all entries).
 # Authors: "me: true" bolds the name; "url" links it; "mark" appends * (equal contribution) or † (corresponding).
 
+- title: "DiffAuction: An Auction-Driven Framework for Generative Image Advertising"
+  short: DiffAuction
+  year: 2026
+  venue: Preprint
+  selected: false
+  image: publication_preview/diffauction.png
+  summary: >-
+    An auction-driven framework that lets multiple advertisers compete for exposure inside one generated image.
+    A training-free method controls how prominently each product appears, a VLM+LLM evaluator scores click-through
+    intent, and a learnable affine maximizer auction sets prices while keeping truthful bidding optimal. Exposure
+    tracks each advertiser's share more closely than prior work at up to 4.58× the speed, and the auction earns
+    <strong>up to 51% more revenue</strong> than a Myerson-based baseline.
+  authors:
+    - name: Yijie Su
+    - name: Ruiyang Si
+      me: true
+    - name: Tonghan Wang
+      url: https://tonghanwang.github.io/
+      mark: "†"
+  links:
+    - name: arXiv
+      url: https://arxiv.org/abs/2610.34917
+
 - title: "Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success but 65% Fewer Tokens"
   short: PyRUA-Lean
   year: 2026
