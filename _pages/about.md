@@ -8,7 +8,7 @@ permalink: /
 
 I am an incoming Master's student at Peking University, advised by [Prof. Daquan Zhou](https://zhoudaquan.github.io/homepage.io/index.html). I am currently a member of [DAGroup](https://github.com/DAGroup-PKU).
 
-Previously, I worked on LLM post-training with [Prof. Ning Ding](https://c3i.ee.tsinghua.edu.cn/people/ning_ding/) at Tsinghua University, audio-visual generation and editing with [Prof. Di Hu](https://dtaoo.github.io/) at Renmin University of China, and the economics of generative models with [Prof. Tonghan Wang](https://tonghanwang.github.io/) at Tsinghua University.
+Previously, I worked on LLM post-training with [Prof. Ning Ding](https://www.stingning.cn/) at Tsinghua University, audio-visual generation and editing with [Prof. Di Hu](https://dtaoo.github.io/) at Renmin University of China, and the economics of generative models with [Prof. Tonghan Wang](https://tonghanwang.github.io/) at Tsinghua University.
 
 My journey in computer science began with competitive programming, which gave me a strong algorithmic foundation that has naturally carried over into my research. My current research focuses on **agents** and **robotics**.
 
@@ -21,7 +21,7 @@ My journey in computer science began with competitive programming, which gave me
 <ul class="home-news">
   <li>
     <span class="home-news-date">2026-10</span>
-    <span>Released <strong>PyRUA-Lean</strong>, an efficient code-execution framework for robot-use agents: higher success with far fewer tokens, state-of-the-art on RoboDojo, and a trained 4B Coder model that generalizes to unseen tasks.
+    <span>Released <strong>PyRUA-Lean</strong>, a token-efficient robot-use agent harness with higher success and stronger generalization, ranked #1 on both the <a href="https://robodojo-benchmark.com/leaderboard" target="_blank" rel="noopener noreferrer">RoboDojo</a> and <a href="https://robocoliseum.ai/leaderboard" target="_blank" rel="noopener noreferrer">RoboColiseum</a> leaderboards.
       <a href="https://arxiv.org/abs/2610.01939" target="_blank" rel="noopener noreferrer">[paper]</a>
       <a href="https://dagroup-pku.github.io/PyRUA-Lean/" target="_blank" rel="noopener noreferrer">[project]</a>
       <a href="https://github.com/DAGroup-PKU/PyRUA-Lean" target="_blank" rel="noopener noreferrer">[code]</a>
@@ -38,7 +38,8 @@ My journey in computer science began with competitive programming, which gave me
 <p class="home-pub-note">* Equal contribution &nbsp;&nbsp;† Corresponding author</p>
 
 <div class="home-pubs">
-{% for pub in site.data.publications %}{% if pub.selected %}{% include pub_card.liquid pub=pub %}{% endif %}{% endfor %}
+{% for s in site.data.series %}{% include pub_series.liquid series=s %}{% endfor %}
+{% for pub in site.data.publications %}{% if pub.selected %}{% unless pub.series %}{% include pub_card.liquid pub=pub %}{% endunless %}{% endif %}{% endfor %}
 </div>
 
 ## Education

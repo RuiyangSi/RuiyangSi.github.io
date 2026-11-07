@@ -1,18 +1,141 @@
 # Shared by the homepage (selected: true) and /publications/ (all entries).
 # Authors: "me: true" bolds the name; "url" links it; "mark" appends * (equal contribution) or † (corresponding).
+# series: groups a paper under a research line defined in _data/series.yml (shown as one block on the homepage).
+# github: owner/repo; adds a live GitHub star badge after the links.
+# image_full: optional higher-resolution version of the same figure (same proportions), loaded when the thumbnail
+#             is clicked to enlarge. zoom: false turns click-to-enlarge off for a paper (e.g. a logo thumbnail).
+# links:  "Paper", "Project", "Code", "Model" get matching icons automatically.
+
+- title: "Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement"
+  short: RSIJudge
+  series: PyRUA-Lean
+  year: 2026
+  venue: Preprint
+  selected: false
+  image: publication_preview/rsijudge.png
+  image_full: publication_preview/rsijudge-full.png
+  summary: >-
+    Letting a self-improving robot coding agent read the benchmark's success criteria helps only on that verifier:
+    on criteria-limited tasks, its 23.8-point lead vanishes once the same episodes are judged by
+    instruction-faithful criteria.
+  authors:
+    - name: Wenbo Huang
+    - name: Jianxin Bi
+    - name: Shunyu Yang
+    - name: Ruiyang Si
+      me: true
+    - name: Rui Ni
+    - name: Qiang Wang
+    - name: Shulong Jiang
+    - name: Yintianrun Zhang
+    - name: Feixiang Ruan
+      url: https://vme0522.github.io/
+    - name: Kewei Zhang
+      url: https://xiwen1.github.io/
+    - name: Ye Huang
+    - name: Shukai Gong
+    - name: Daquan Zhou
+      url: https://zhoudaquan.github.io/homepage.io/index.html
+      mark: "†"
+  links:
+    - name: Paper
+      url: https://arxiv.org/abs/2611.08318
+    - name: Project
+      url: https://dagroup-pku.github.io/PyRUA-Lean/RSIJudge/
+    - name: Code
+      url: https://github.com/DAGroup-PKU/PyRUA-Lean
+
+- title: "PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World"
+  short: PyRUA-REAL
+  series: PyRUA-Lean
+  year: 2026
+  venue: Preprint
+  selected: false
+  image: publication_preview/pyrua-real.jpg
+  image_full: publication_preview/pyrua-real-full.jpg
+  summary: >-
+    Recursive self-improvement on real robots: coding agents explore, diagnose and revise robot programs and keep
+    what they learn as reusable skills, reaching 91.1% average success on eight real-world tasks
+    (84.4% on RoboDojo).
+  authors:
+    - name: Qiang Wang
+      mark: "*"
+    - name: Jianxin Bi
+      mark: "*"
+    - name: Shulong Jiang
+      mark: "*"
+    - name: Ruiyang Si
+      me: true
+    - name: Wenbo Huang
+    - name: Kaiqi Chen
+    - name: Jiaxin Li
+    - name: Liyun Li
+    - name: Xuanyi Li
+      mark: "†"
+    - name: Daquan Zhou
+      url: https://zhoudaquan.github.io/homepage.io/index.html
+      mark: "†"
+  links:
+    - name: Paper
+      url: https://arxiv.org/abs/2611.06768
+    - name: Project
+      url: https://dagroup-pku.github.io/PyRUA-Lean/real/
+    - name: Code
+      url: https://github.com/DAGroup-PKU/PyRUA-Lean/tree/REAL
+
+- title: "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data"
+  short: PyRUA-DataFarm
+  series: PyRUA-Lean
+  year: 2026
+  venue: Preprint
+  selected: false
+  image: publication_preview/pyrua-datafarm-teaser.png
+  image_full: publication_preview/pyrua-datafarm-teaser-full.png
+  summary: >-
+    A coding agent does the teleoperator's job, turning one calibration episode into photographic multi-view robot
+    data at $0.80 per additional episode; policies trained only on it match teleoperation and stay
+    robust under an unseen tablecloth and lighting (87 vs. 46 successes).
+  authors:
+    - name: Kewei Zhang
+      url: https://xiwen1.github.io/
+      mark: "*"
+    - name: Juncheng Ma
+      mark: "*"
+    - name: Guodong Lv
+    - name: Duomin Wang
+      url: https://dorniwang.github.io/
+    - name: Feixiang Ruan
+      url: https://vme0522.github.io/
+    - name: Ruiyang Si
+      me: true
+    - name: Chuanrui Zhang
+    - name: Yuxuan Chen
+    - name: Hao Chen
+    - name: Yichen Liu
+    - name: Yintianrun Zhang
+    - name: Yufan Deng
+    - name: Enze Xie
+    - name: Daquan Zhou
+      url: https://zhoudaquan.github.io/homepage.io/index.html
+      mark: "†"
+  links:
+    - name: Paper
+      url: https://arxiv.org/abs/2611.05320
+    - name: Project
+      url: https://dagroup-pku.github.io/PyRUA-Lean/DataFarm/
+    - name: Code
+      url: https://github.com/DAGroup-PKU/PyRUA-Lean/tree/DataFarm
 
 - title: "DiffAuction: An Auction-Driven Framework for Generative Image Advertising"
   short: DiffAuction
   year: 2026
   venue: Preprint
-  selected: false
+  selected: true
   image: publication_preview/diffauction.png
   summary: >-
-    An auction-driven framework that lets multiple advertisers compete for exposure inside one generated image.
-    A training-free method controls how prominently each product appears, a VLM+LLM evaluator scores click-through
-    intent, and a learnable affine maximizer auction sets prices while keeping truthful bidding optimal. Exposure
-    tracks each advertiser's share more closely than prior work at up to 4.58× the speed, and the auction earns
-    <strong>up to 51% more revenue</strong> than a Myerson-based baseline.
+    Lets multiple advertisers compete for exposure inside one generated image: a training-free method controls how
+    prominently each product appears, and a learnable truthful auction sets prices, earning
+    up to 51% more revenue than a Myerson-based baseline.
   authors:
     - name: Yijie Su
     - name: Ruiyang Si
@@ -21,20 +144,21 @@
       url: https://tonghanwang.github.io/
       mark: "†"
   links:
-    - name: arXiv
+    - name: Paper
       url: https://arxiv.org/abs/2610.34917
 
 - title: "Fewer Tokens, Better Action: GPT-6 Astra Robot Agents with 14% Higher Success but 65% Fewer Tokens"
   short: PyRUA-Lean
+  series: PyRUA-Lean
+  github: DAGroup-PKU/PyRUA-Lean
   year: 2026
   venue: Technical Report
   selected: true
   image: publication_preview/pyrua-lean.svg
   summary: >-
-    An efficient code-execution framework for robot-use agents: the agent chains robot primitives in Python cells,
-    raising success from 63.1% to 71.7% with 65% fewer input tokens. Achieves <strong>state-of-the-art on RoboDojo</strong>
-    (51.6% success, 19.4 points above the previous best on the public leaderboard), and our GRPO-trained 4B Coder
-    generalizes to unseen tasks (18.8% → 44.1%), outperforming Qwen3.5-27B.
+    A token-efficient robot-use agent harness: the agent chains robot primitives in Python cells, reaching higher
+    success with 65% fewer input tokens and generalizing better to unseen tasks. Ranked #1 on the RoboDojo and
+    RoboColiseum leaderboards.
   authors:
     - name: Ruiyang Si
       me: true
@@ -61,7 +185,7 @@
       url: https://zhoudaquan.github.io/homepage.io/index.html
       mark: "†"
   links:
-    - name: arXiv
+    - name: Paper
       url: https://arxiv.org/abs/2610.01939
     - name: Project
       url: https://dagroup-pku.github.io/PyRUA-Lean/
@@ -101,5 +225,5 @@
       url: http://xuelongli.cn/en.php
       mark: "†"
   links:
-    - name: arXiv
+    - name: Paper
       url: https://arxiv.org/abs/2510.00050

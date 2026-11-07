@@ -1,8 +1,26 @@
 {% assign pub = include.pub %}
-<div class="home-pub">
+<div class="home-pub{% if include.compact %} home-pub--compact{% endif %}">
   {% if pub.image %}
-    <div class="home-pub-thumb">
-      <img src="{{ pub.image | prepend: '/assets/img/' | relative_url }}" alt="{{ pub.short }}" loading="lazy">
+    {% comment %}
+      Click-to-enlarge (medium-zoom). Nothing is added inside the frame: the hover hint is a CSS ::after on the frame,
+      so the image stays centered even if a browser still has an older stylesheet cached.
+    {% endcomment %}
+    {% assign zoomable = true %}
+    {% if pub.zoom == false %}
+      {% assign zoomable = false %}
+    {% endif %}
+    <div class="home-pub-thumb{% if zoomable %} home-pub-thumb--zoom{% endif %}">
+      <img
+        src="{{ pub.image | prepend: '/assets/img/' | relative_url }}"
+        alt="{{ pub.short }}"
+        loading="lazy"
+        {% if zoomable %}
+          data-zoomable
+          {% if pub.image_full %}
+            data-zoom-src="{{ pub.image_full | prepend: '/assets/img/' | relative_url }}"
+          {% endif %}
+        {% endif %}
+      >
     </div>
   {% endif %}
   <div class="home-pub-body">
@@ -23,13 +41,63 @@
       {%- endfor -%}
     </p>
     <p class="home-pub-meta">
-      <strong>{{ pub.venue }}</strong>
-      {%- for l in pub.links %}
-        | <a href="{{ l.url }}" target="_blank" rel="noopener noreferrer">{{ l.name }}</a>
-      {%- endfor %}
+      <span class="home-pub-venue">{{ pub.venue }}</span>
+      <span class="home-pub-dot">·</span>
+      {{ pub.year }}
+      {% if pub.series and include.in_series == null %}
+        <span class="pub-tag pub-tag--series">{{ pub.series }} series</span>
+      {% endif %}
     </p>
     {% if pub.summary %}
       <p class="home-pub-summary">{{ pub.summary }}</p>
     {% endif %}
+    <div class="pub-actions">
+      {% for l in pub.links %}
+        {% assign key = l.name | downcase %}
+        {% case key %}
+          {% when 'paper', 'arxiv', 'pdf' %}
+            {% assign icon = 'fa-regular fa-file-lines' %}
+          {% when 'project', 'page', 'website' %}
+            {% assign icon = 'fa-solid fa-globe' %}
+          {% when 'code', 'github' %}
+            {% assign icon = 'fa-solid fa-code' %}
+          {% when 'model', 'huggingface', 'hf' %}
+            {% assign icon = 'hf' %}
+          {% when 'dataset', 'data' %}
+            {% assign icon = 'fa-solid fa-database' %}
+          {% when 'video' %}
+            {% assign icon = 'fa-solid fa-play' %}
+          {% else %}
+            {% assign icon = 'fa-solid fa-link' %}
+        {% endcase %}
+        {% if l.icon %}
+          {% assign icon = l.icon %}
+        {% endif %}
+        <a class="pub-action" href="{{ l.url }}" target="_blank" rel="noopener noreferrer">
+          {%- if icon == 'hf' -%}
+            <span class="pub-action-emoji" aria-hidden="true">🤗</span>
+          {%- else -%}
+            <i class="{{ icon }}" aria-hidden="true"></i>
+          {%- endif -%}
+          {{ l.name }}
+        </a>
+      {% endfor %}
+      {% if pub.github %}
+        <a
+          class="pub-star"
+          href="https://github.com/{{ pub.github }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Star {{ pub.github }} on GitHub"
+        >
+          <img
+            src="https://img.shields.io/github/stars/{{ pub.github }}?style=social"
+            alt="GitHub stars for {{ pub.github }}"
+            height="20"
+            loading="lazy"
+          >
+        </a>
+      {% endif %}
+    </div>
   </div>
 </div>

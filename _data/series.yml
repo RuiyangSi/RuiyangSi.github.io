@@ -1,0 +1,8 @@
+# Research lines shown as one block at the top of "Selected Publications" on the homepage.
+# A paper joins a line with `series: <name>` in _data/publications.yml.
+# `lead` is the `short` name of the featured paper; the other papers in the line are folded under it.
+# Optional `description` (may contain HTML) is shown under the title.
+
+- name: PyRUA-Lean
+  full_name: Python for Lean Robot-Use Agents
+  lead: PyRUA-Lean

@@ -1,0 +1,37 @@
+{% comment %}
+  One research line from _data/series.yml: the lead paper up front, the rest folded underneath.
+{% endcomment %}
+{% assign series = include.series %}
+{% assign series_members = site.data.publications | where: 'series', series.name %}
+{% assign series_lead = series_members | where: 'short', series.lead | first %}
+{% assign series_rest = series_members | where_exp: 'p', 'p.short != series.lead' %}
+<section class="pub-series" aria-label="{{ series.name }} series">
+  <h3 class="pub-series-name">
+    {{ series.name }}
+    <span class="pub-series-full">{{ series.full_name }}</span>
+  </h3>
+  {% if series.description %}
+    <p class="pub-series-desc">{{ series.description }}</p>
+  {% endif %}
+
+  {% if series_lead %}
+    {% include pub_card.liquid pub=series_lead in_series=true %}
+  {% endif %}
+
+  {% if series_rest.size > 0 %}
+    <details class="pub-series-more">
+      <summary>
+        <span class="pub-series-toggle">
+          <span class="when-closed">Show {{ series_rest.size }} follow-up works</span>
+          <span class="when-open">Hide follow-up works</span>
+          <i class="fa-solid fa-chevron-down pub-series-chevron" aria-hidden="true"></i>
+        </span>
+      </summary>
+      <div class="pub-series-list">
+        {% for p in series_rest %}
+          {% include pub_card.liquid pub=p compact=true in_series=true %}
+        {% endfor %}
+      </div>
+    </details>
+  {% endif %}
+</section>
